@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-# Methodologies contexts for devs
+# Workflows contexts for devs
 
 A personal reference of software engineering methodologies, frameworks, and operational practices. 
 
