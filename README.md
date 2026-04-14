@@ -5,9 +5,9 @@ nav_order: 1
 permalink: /
 ---
 
-# Engineering Notes — Methodologies
+# Methodologies contexts for devs
 
-A personal reference of software engineering methodologies, frameworks, and operational practices. Each file is self-contained and includes Mermaid diagrams.
+A personal reference of software engineering methodologies, frameworks, and operational practices. 
 
 The page is available in: https://italosalgado14.github.io/methodology-cheatsheets/
 
