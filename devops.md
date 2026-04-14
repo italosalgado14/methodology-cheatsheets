@@ -101,3 +101,43 @@ Industry-standard metrics from the DORA research:
 - Multiple deployments per week (or more)
 - Cross-functional teams that own services end-to-end
 - Less suited (in pure form) to safety-critical embedded — though CI/CD principles still apply
+
+---
+
+## Team roles
+
+DevOps is a culture more than a job title, but in practice several specialized roles own the pipeline, platform, and shared tooling.
+
+```mermaid
+flowchart TB
+    subgraph Dev[Development]
+        SWE[Software Engineer<br/>owns code + CI/CD for service]
+    end
+    subgraph Platform[Platform / DevOps]
+        DOE[DevOps Engineer<br/>pipelines, IaC, automation]
+        PE[Platform Engineer<br/>internal developer platform]
+        CA[Cloud Architect<br/>cloud design]
+    end
+    subgraph Sec[Security]
+        SEC[DevSecOps Engineer<br/>shift-left security]
+    end
+    subgraph Ops[Operations]
+        SRE[SRE<br/>reliability & on-call]
+        RM[Release Manager<br/>coordination]
+    end
+    SWE --> DOE
+    DOE --> PE
+    PE --> SRE
+    SEC --- DOE
+    CA --- PE
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Software Engineer** | Builds the service and owns its CI/CD pipeline end-to-end |
+| **DevOps Engineer** | Automates build, test, deploy, and infrastructure provisioning |
+| **Platform Engineer** | Delivers the internal developer platform (IDP) — self-service infra for devs |
+| **Cloud Architect** | Designs cloud topology, networking, cost, and multi-region strategy |
+| **DevSecOps / Security Engineer** | Embeds security scanning (SAST/DAST/SBOM) into pipelines |
+| **Release Manager** | Coordinates releases across teams (more common in large/regulated orgs) |
+| **Site Reliability Engineer** | Reliability, observability, incident response (see SRE page) |

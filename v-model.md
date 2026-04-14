@@ -95,3 +95,57 @@ They seem opposed but increasingly coexist:
 ## When you'll encounter it
 
 Given your embedded background: any role in **automotive, medical imaging, robotics with safety functions, industrial automation, aerospace, or defense** will use some form of the V-Model. Even when teams say "we do Agile," the underlying compliance work follows V-Model traceability.
+
+---
+
+## Team roles
+
+V-Model teams include roles dedicated to requirements, safety, and verification — roles you rarely see in pure web/SaaS Agile teams. Roles map naturally to the left (definition) and right (verification) sides of the V.
+
+```mermaid
+flowchart TB
+    subgraph Left[Left side — Definition]
+        RE[Requirements Engineer<br/>user & system reqs]
+        SE[Systems Engineer<br/>architecture]
+        SWE[Software Engineer<br/>module design & code]
+        HWE[Hardware Engineer<br/>ECU / board design]
+    end
+    subgraph Right[Right side — Verification]
+        UTE[Unit Test Engineer]
+        VV[V&V Engineer<br/>integration & system test]
+        HIL[HIL / SIL Test Engineer]
+        ATE[Acceptance Test Engineer]
+    end
+    subgraph Cross[Cross-cutting]
+        SAF[Safety Engineer<br/>FMEA, HARA, safety case]
+        QA[Quality Engineer<br/>ASPICE, audits]
+        CM[Configuration Manager<br/>baselines, traceability]
+        CERT[Compliance / Cert Manager<br/>regulator interface]
+        PM[Project Manager]
+    end
+    RE --> SE --> SWE
+    SE --> HWE
+    SWE --> UTE --> VV --> HIL --> ATE
+    SAF -.safety reqs.-> RE
+    SAF -.verification.-> VV
+    QA -.audits.-> Left
+    QA -.audits.-> Right
+    CM -.traceability.-> Left
+    CM -.traceability.-> Right
+    CERT -.evidence pack.-> ATE
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Requirements Engineer** | Elicits, writes, and maintains user and system requirements in DOORS/Polarion |
+| **Systems Engineer** | Architecture and decomposition across HW/SW |
+| **Software Engineer / Firmware Engineer** | Module design, coding (often MISRA C/C++), static analysis |
+| **Hardware Engineer** | ECU, PCB, sensor/actuator integration |
+| **Safety Engineer** | Hazard analysis (HARA/FMEA), derives safety requirements, writes safety case |
+| **Quality Engineer (SQA)** | Process audits, ASPICE/CMMI compliance, defect metrics |
+| **V&V Engineer** | Verification and validation strategy, integration and system test |
+| **Unit Test Engineer** | Structural coverage (MC/DC) with VectorCAST, Cantata, Tessy |
+| **HIL / SIL Test Engineer** | Hardware/Software-in-the-Loop test benches (dSPACE, CANoe) |
+| **Configuration Manager** | Baselines, change control, end-to-end traceability matrices |
+| **Compliance / Certification Manager** | Interface with regulators (FDA, TÜV, EASA) and cert evidence |
+| **Project Manager** | Plans phases, manages milestones and reviews |

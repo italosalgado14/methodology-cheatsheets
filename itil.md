@@ -156,3 +156,37 @@ flowchart LR
 | **Change** | Addition, modification, or removal of anything that could affect services |
 | **SLA** | Service Level Agreement — measurable commitments to the customer |
 | **CMDB** | Configuration Management Database — inventory of IT assets and relationships |
+
+---
+
+## Team roles
+
+ITIL organizations have formalized roles around each practice. You will see these job titles (often in ServiceNow-based shops).
+
+```mermaid
+flowchart TB
+    User([User / Customer]) --> SD[Service Desk Agent<br/>L1 triage]
+    SD --> L2[L2 / L3 Support Engineer<br/>technical resolution]
+    SD -.escalate major incident.-> MIM[Major Incident Manager]
+    L2 -.recurring.-> PRBM[Problem Manager<br/>root-cause analysis]
+    PRBM --> CHGM[Change Manager<br/>Change Enablement]
+    CHGM --> CAB[CAB<br/>Change Advisory Board]
+    CAB --> RM[Release Manager<br/>deployment]
+    CFGM[Configuration Manager<br/>CMDB owner] -.supports all.-> L2
+    SLM[Service Level Manager<br/>SLA owner] -.monitors.-> SD
+    SO[Service Owner<br/>accountable for service] --- SLM
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Service Owner** | End-to-end accountability for a service across its lifecycle |
+| **Service Desk Agent (L1)** | First contact, logs and triages incidents and requests |
+| **L2 / L3 Support Engineer** | Technical investigation and resolution of escalated tickets |
+| **Incident Manager** | Owns the Incident Management practice; coordinates response |
+| **Major Incident Manager** | Leads high-severity incidents; drives comms and resolution |
+| **Problem Manager** | Root-cause analysis for recurring or high-impact incidents |
+| **Change Manager** | Assesses change risk, chairs the CAB, approves deployments |
+| **Release Manager** | Plans and coordinates deployment of approved changes |
+| **Configuration Manager** | Owns the CMDB; maintains CI accuracy and relationships |
+| **Service Level Manager** | Negotiates and monitors SLAs, OLAs, and underpinning contracts |
+| **Knowledge Manager** | Curates the knowledge base so fixes are reusable |

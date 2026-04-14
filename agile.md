@@ -149,3 +149,36 @@ flowchart LR
 | **WIP Limit** | Max items allowed in a workflow column (Kanban) |
 | **Definition of Done** | Shared checklist for what "done" means |
 | **Retrospective** | Team meeting to inspect and adapt the process |
+
+---
+
+## Team roles
+
+A typical Agile product team mixes business, design, and engineering roles around the Scrum core.
+
+```mermaid
+flowchart LR
+    PM[Product Manager<br/>strategy & roadmap] --> PO[Product Owner<br/>backlog & stories]
+    PO --> Team
+    SM[Scrum Master<br/>facilitator] --- Team
+    subgraph Team[Cross-functional Team]
+        SWE[Software Engineer]
+        MLE[ML Engineer]
+        QA[QA / Test Engineer]
+        UX[UX / UI Designer]
+    end
+    TL[Tech Lead / EM<br/>technical & people] --- Team
+    Stake[Stakeholders / Users] -.feedback.-> PO
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Product Manager** | Market, strategy, outcomes, roadmap |
+| **Product Owner** | Orders backlog, writes stories, accepts increments |
+| **Scrum Master** | Facilitates events, removes blockers, coaches the team |
+| **Software Engineer** | Designs, builds, and tests features |
+| **ML Engineer** | Model development, data pipelines, MLOps (in AI-heavy teams) |
+| **QA / Test Engineer** | Test strategy, automation, quality gates |
+| **UX / UI Designer** | User research, flows, visual design |
+| **Tech Lead / Engineering Manager** | Technical direction + people leadership |
+| **Stakeholder** | Provides priorities and consumes increments |

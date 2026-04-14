@@ -99,3 +99,37 @@ flowchart TD
 | Best for | Modern web/cloud teams | High-scale, high-reliability services | Enterprise IT operations |
 
 > "SRE is a concrete implementation of DevOps principles."
+
+---
+
+## Team roles
+
+SRE teams work alongside product engineering, either **embedded** in a product team or as a **consulting** team that partners with many product teams.
+
+```mermaid
+flowchart LR
+    subgraph Product[Product Team]
+        SWE[Software Engineer<br/>feature development]
+        PO[Product Owner]
+    end
+    subgraph SRETeam[SRE Team]
+        SRE[Site Reliability Engineer<br/>SLOs, automation, on-call]
+        OE[Observability Engineer<br/>metrics, logs, tracing]
+        IC[Incident Commander<br/>during major incidents]
+        SREM[SRE Manager<br/>error-budget policy]
+    end
+    SWE <-->|share on-call,<br/>SLO reviews| SRE
+    SRE --> OE
+    SREM -.policy.-> Product
+    IC -.activates during MI.-> SRE
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Site Reliability Engineer** | Defines SLOs, reduces toil, writes automation, owns on-call |
+| **SRE Manager** | Error-budget policy, hiring, cross-team reliability strategy |
+| **Observability Engineer** | Metrics, logs, tracing pipelines; platform for SLI measurement |
+| **Incident Commander** | Coordinates major incidents (role rotates; not a full-time job) |
+| **Production Engineer** | Meta/Facebook term — similar to SRE, embedded with product teams |
+| **Software Engineer (product)** | Partner of SRE; shares on-call in mature orgs |
+| **Platform Engineer** | Provides shared infra (K8s, service mesh) SRE relies on |

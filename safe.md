@@ -119,3 +119,25 @@ SAFe is controversial in the Agile community. Common criticisms:
 | **Nexus** | 3–9 teams | Scrum.org's scaling |
 | **SAFe** | 50–1000s | Prescriptive, structured |
 | **Spotify Model** | Any | Cultural, not a framework |
+
+---
+
+## Team roles
+
+SAFe defines roles at three levels — Portfolio, ART (Program), and Team. The diagram earlier in this page shows the hierarchy; the table below details responsibilities.
+
+| Level | Role | Primary responsibility |
+|---|---|---|
+| Portfolio | **Lean Portfolio Management (LPM)** | Strategy, funding, portfolio epics, investment horizons |
+| Portfolio | **Epic Owner** | Drives large cross-ART initiatives (epics) through the Kanban |
+| Portfolio | **Enterprise Architect** | Technical strategy across the whole portfolio |
+| ART | **Release Train Engineer (RTE)** | Chief Scrum Master of the ART; facilitates PI Planning and I&A |
+| ART | **Product Management** | Owns Program Backlog, features, vision, roadmap for the ART |
+| ART | **System Architect / Engineer** | Technical vision and NFRs across the ART |
+| ART | **Business Owners** | Key stakeholders accountable for ART business outcomes |
+| ART | **System Team** | Shared infra, CI/CD, integration environments for the ART |
+| Team | **Product Owner (PO)** | Team backlog, stories, acceptance; partners with PM |
+| Team | **Scrum Master / Team Coach** | Facilitates team events, removes impediments |
+| Team | **Dev Team** | Software engineers, QA, UX, ML engineers — build the increments |
+| Solution (large SAFe) | **Solution Train Engineer (STE)** | Coordinates multiple ARTs on one solution |
+| Solution (large SAFe) | **Solution Architect** | Technical integration across ARTs |

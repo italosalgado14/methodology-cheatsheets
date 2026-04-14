@@ -126,3 +126,35 @@ Almost every modern methodology has Lean roots:
 - **SRE's** toil reduction is Lean waste elimination
 
 Understanding Lean gives you the conceptual foundation behind all of them.
+
+---
+
+## Team roles
+
+Lean deliberately avoids heavy role definitions — its premise is that *everyone* owns improvement. Still, these roles appear in Lean transformations (software and manufacturing alike).
+
+```mermaid
+flowchart LR
+    Exec[Executive Sponsor<br/>vision & resources] --> VSM[Value Stream Manager<br/>end-to-end flow owner]
+    VSM --> Coach[Lean Coach / Sensei<br/>teaches & challenges]
+    Coach --> Team
+    subgraph Team[Empowered Team]
+        Members[Team Members<br/>run Kaizen daily]
+        KF[Kaizen Facilitator<br/>runs improvement events]
+    end
+    Coach -.Gemba walks.-> Team
+    VSM -.observes.-> Team
+    Team -.PDCA signals.-> VSM
+```
+
+| Role | Primary responsibility |
+|---|---|
+| **Executive Sponsor** | Provides vision, resources, and removes organizational blockers |
+| **Value Stream Manager** | End-to-end accountability for one value stream; owns flow metrics |
+| **Lean Coach / Sensei** | Teaches Lean thinking; challenges teams via Gemba walks and questions |
+| **Kaizen Facilitator** | Runs improvement events (Kaizen blitz), trains PDCA |
+| **Team Members** | Empowered to stop the line, suggest and run small experiments |
+| **Gemba Leader (manager)** | Goes to "the real place" to observe, not to command |
+| **Change Agent** | Drives cultural adoption across departments during a transformation |
+
+In software contexts, these roles **overlap with Agile / DevOps roles** (Product Manager, Engineer, Engineering Manager) rather than replacing them. Lean is a lens, not a separate team.
