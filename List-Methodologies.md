@@ -1,0 +1,199 @@
+# List of Methodologies by Industry
+
+A reference catalog of methodologies, frameworks, and standards you will encounter across industries. Use this as a map to know what exists and where it applies.
+
+---
+
+## Software development & delivery
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Scrum** | Iterative sprints, defined roles | Product/feature teams | Jira, Azure DevOps, Linear |
+| **Kanban** | Continuous flow, WIP limits | Support, ops, maintenance | Jira, Trello, Azure Boards |
+| **Extreme Programming (XP)** | Pair programming, TDD, CI | High-quality codebases | GitHub Actions, Jenkins |
+| **Crystal** | Lightweight, people-focused | Small teams | Any Agile tracker |
+| **Feature-Driven Development (FDD)** | Feature-by-feature delivery | Mid-size teams | Jira, custom |
+| **Dynamic Systems Development Method (DSDM)** | Time-boxed Agile | UK / Europe enterprises | Atlassian suite |
+| **Waterfall** | Sequential phases | Regulated, fixed-scope projects | MS Project, Primavera |
+| **Spiral Model** | Risk-driven iterations | Large complex systems | MS Project, custom |
+| **Rational Unified Process (RUP)** | Iterative + UML-heavy | Enterprise IT (legacy) | IBM Rational, Enterprise Architect |
+| **Rapid Application Development (RAD)** | Fast prototyping | Internal business apps | Low-code platforms, OutSystems |
+
+## Scaled Agile
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **SAFe** | Scaled Agile Framework | Large enterprises (>50 teams) | Jira Align, Azure DevOps |
+| **LeSS** | Large-Scale Scrum | 2–8 teams, minimalist | Jira |
+| **Nexus** | Scrum.org's scaling | 3–9 teams | Jira |
+| **Scrum@Scale** | Jeff Sutherland's scaling | Multi-team Scrum | Jira |
+| **Spotify Model** | Squads, tribes, chapters, guilds | Tech companies | Jira, custom culture |
+| **Disciplined Agile (DA)** | Hybrid toolkit (PMI) | Enterprises | PMI tools |
+
+## DevOps & operations
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **DevOps** | Dev + Ops integration, CI/CD | Modern web/cloud | GitHub Actions, GitLab CI, Jenkins |
+| **DevSecOps** | DevOps + integrated security | Security-conscious orgs | Snyk, SonarQube, Aqua, Trivy |
+| **GitOps** | Git as source of truth for infra | Kubernetes shops | ArgoCD, Flux, Terraform |
+| **Site Reliability Engineering (SRE)** | Reliability as engineering | High-scale services | Prometheus, Grafana, PagerDuty |
+| **Platform Engineering** | Internal developer platforms | Mature engineering orgs | Backstage, Humanitec |
+| **ChatOps** | Operations via chat | Distributed teams | Slack, MS Teams, Hubot |
+| **NoOps** | Fully automated ops | Serverless-first orgs | AWS Lambda, Vercel |
+
+## IT service management
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **ITIL** | IT service management framework | Enterprise IT, support | ServiceNow, BMC Remedy, Jira SM |
+| **COBIT** | Governance of enterprise IT | Audit, compliance | ISACA tools |
+| **MOF (Microsoft Operations Framework)** | Microsoft's ITSM variant | Microsoft shops | System Center |
+| **FitSM** | Lightweight ITSM | Smaller IT teams | Jira SM, OTRS |
+| **eTOM** | Telecom operations map | Telecom industry | TM Forum tools |
+
+## Process improvement & quality
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Lean** | Eliminate waste, optimize flow | Manufacturing, software | Miro, Kanban tools |
+| **Six Sigma (DMAIC)** | Statistical process improvement | Manufacturing, IT ops | Minitab, JMP |
+| **Lean Six Sigma** | Combined Lean + Six Sigma | Continuous improvement teams | Minitab, Excel |
+| **Kaizen** | Continuous small improvements | All industries | Cultural; whiteboards |
+| **Theory of Constraints (TOC)** | Manage the bottleneck | Operations, manufacturing | Custom |
+| **Total Quality Management (TQM)** | Org-wide quality focus | Manufacturing | QMS software |
+| **5S** | Workplace organization | Factories, labs | Visual management |
+| **Business Process Reengineering (BPR)** | Radical process redesign | Transformation projects | BPM tools |
+| **CMMI** | Process maturity model | Defense, outsourcing, large IT | Custom audits |
+
+## Project management (non-Agile)
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **PRINCE2** | Structured PM method | UK / EU government, enterprise | MS Project, PRINCE2 software |
+| **PMBOK / PMP** | PMI's PM body of knowledge | US enterprises | MS Project, Smartsheet |
+| **Critical Path Method (CPM)** | Schedule-driven planning | Construction, infrastructure | Primavera P6, MS Project |
+| **PERT** | Probabilistic scheduling | R&D, large projects | MS Project |
+| **Critical Chain (CCPM)** | TOC applied to project mgmt | Engineering projects | Concerto, ProChain |
+| **PRiSM** | Sustainability-focused PM | Green projects | GPM tools |
+
+## Product & design
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Design Thinking** | Empathize → Ideate → Prototype | UX, innovation | Figma, Miro, Mural |
+| **Lean Startup** | Build–Measure–Learn, MVPs | Startups, innovation labs | Mixpanel, Optimizely |
+| **Jobs-To-Be-Done (JTBD)** | Frame products around customer "jobs" | Product strategy | Productboard, custom |
+| **Dual Track Agile** | Discovery + delivery in parallel | Mature product teams | Productboard, Aha! |
+| **Shape Up** | 6-week cycles, no backlogs (Basecamp) | Small product teams | Basecamp, custom |
+| **OKRs** | Goal-setting framework | Tech companies | Lattice, Workboard, Perdoo |
+| **Hooked Model** | Habit-forming product design | Consumer apps | Analytics tools |
+
+## Embedded & safety-critical
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **V-Model** | Each design phase has matching test | Automotive, medical, aerospace | Polarion, DOORS, VectorCAST |
+| **ASPICE** | Automotive process assessment | Automotive software | Polarion, IBM ELM |
+| **MISRA** | C/C++ coding guidelines | Automotive, embedded | LDRA, Polyspace |
+| **AUTOSAR** | Automotive software architecture | Automotive ECUs | Vector tools, Elektrobit |
+| **Model-Based Systems Engineering (MBSE)** | Models replace documents | Aerospace, defense, automotive | Cameo, Enterprise Architect, Simulink |
+| **Model-Based Design (MBD)** | Simulation-driven dev | Control systems | MATLAB/Simulink |
+| **Hardware-in-the-Loop (HIL)** | Real-time test of embedded code | Automotive, aerospace | dSPACE, NI VeriStand |
+| **Agile-V / SafeScrum** | Hybrid V-Model + Agile | Modern automotive | Polarion + Jira |
+
+## Industry-specific safety standards
+
+| Standard | Industry | Purpose |
+|---|---|---|
+| **ISO 26262** | Automotive | Functional safety (ASIL A–D) |
+| **IEC 62304** | Medical devices | Software lifecycle (Class A–C) |
+| **ISO 13485** | Medical devices | Quality management |
+| **DO-178C** | Aerospace | Airborne software (DAL E–A) |
+| **DO-254** | Aerospace | Airborne hardware |
+| **EN 50128** | Railway | Railway software (SIL 0–4) |
+| **IEC 61508** | Industrial | Functional safety (SIL 1–4) |
+| **IEC 61511** | Process industry | Safety instrumented systems |
+| **ISO 9001** | All | Quality management |
+| **ISO/IEC 27001** | All | Information security mgmt |
+| **GDPR** | EU | Data protection regulation |
+| **HIPAA** | US healthcare | Patient data protection |
+| **SOC 2** | SaaS | Security & availability audits |
+| **PCI-DSS** | Payment | Card data security |
+
+## Manufacturing & operations
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Toyota Production System (TPS)** | Original Lean | Automotive manufacturing | Visual mgmt |
+| **Just-In-Time (JIT)** | Produce on demand | Manufacturing | ERP systems (SAP, Oracle) |
+| **Total Productive Maintenance (TPM)** | Equipment reliability | Factories | CMMS tools |
+| **OEE (Overall Equipment Effectiveness)** | Manufacturing KPI | Production lines | MES systems |
+| **SMED (Single-Minute Exchange of Die)** | Quick changeovers | Manufacturing | Custom |
+| **Industry 4.0** | Smart, connected manufacturing | Modern factories | IIoT platforms, MES |
+
+## Construction & infrastructure
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Last Planner System (LPS)** | Lean construction planning | Building projects | vPlanner, custom |
+| **Integrated Project Delivery (IPD)** | Collaborative contracts | Major construction | BIM tools |
+| **Building Information Modeling (BIM)** | 3D model-based collaboration | AEC industry | Revit, Navisworks, ArchiCAD |
+| **Earned Value Management (EVM)** | Project performance metrics | Government, defense | MS Project, Primavera |
+
+## Data & analytics
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **CRISP-DM** | Cross-industry data mining process | Data science projects | Jupyter, custom |
+| **TDSP** | Microsoft's Team Data Science Process | Enterprise ML | Azure ML |
+| **MLOps** | DevOps for machine learning | ML in production | MLflow, Kubeflow, Weights & Biases |
+| **DataOps** | DevOps for data pipelines | Data engineering | Airflow, dbt, Dagster |
+| **DataMesh** | Decentralized data ownership | Large data orgs | Custom architectures |
+| **Modern Data Stack** | ELT + warehouse + BI | Analytics teams | Snowflake, dbt, Fivetran, Looker |
+
+## Cybersecurity
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **NIST Cybersecurity Framework** | Risk-based security framework | US enterprises, gov | GRC platforms |
+| **ISO/IEC 27001** | Information security mgmt system | Global enterprises | ISMS tools |
+| **OWASP** | Web app security best practices | Web/SaaS dev | ZAP, Burp, Snyk |
+| **MITRE ATT&CK** | Adversary tactics taxonomy | SOC, threat hunting | SIEM platforms |
+| **Zero Trust** | Never trust, always verify | Modern enterprises | Okta, Cloudflare, Zscaler |
+| **STRIDE / PASTA** | Threat modeling methodologies | Secure design | OWASP Threat Dragon, Microsoft TMT |
+
+## Business & strategy
+
+| Methodology | Description | Typical context | Common tools |
+|---|---|---|---|
+| **Balanced Scorecard** | Strategic performance mgmt | Corporate strategy | BSC software |
+| **Hoshin Kanri** | Strategy deployment (Lean) | Toyota, Lean orgs | A3 reports |
+| **Business Model Canvas** | Visualize business model | Startups, strategy | Strategyzer, Miro |
+| **Porter's Five Forces** | Industry analysis | Strategic planning | Conceptual |
+| **SWOT** | Strengths/Weaknesses/Opportunities/Threats | Universal strategy tool | Conceptual |
+| **OGSM** | Objectives, Goals, Strategies, Measures | Corporate planning | Custom |
+
+---
+
+## How to read this list
+
+- **Frameworks** (Scrum, SAFe, ITIL) define roles, events, and artifacts
+- **Methodologies** (Lean, Six Sigma) define principles and techniques
+- **Standards** (ISO 26262, DO-178C) are mandatory in regulated industries
+- **Models** (V-Model, Spiral) describe lifecycle structure
+
+You won't use most of these — but recognizing the names will help you decode job descriptions, RFPs, and conversations across industries.
+
+## Recommended deep-dives by career path
+
+| If your path is... | Prioritize learning |
+|---|---|
+| **Web/SaaS dev** | Agile, Scrum, Kanban, DevOps, SRE |
+| **Embedded / automotive** | V-Model, ASPICE, ISO 26262, AUTOSAR, MBD |
+| **Medical devices** | V-Model, IEC 62304, ISO 13485, FDA processes |
+| **Data / ML** | CRISP-DM, MLOps, DataOps |
+| **Enterprise / consulting** | SAFe, ITIL, PRINCE2, COBIT |
+| **Startup / product** | Lean Startup, Design Thinking, OKRs, Shape Up |
+| **Manufacturing / IoT** | Lean, Six Sigma, TPM, Industry 4.0 |
+| **Security** | NIST CSF, ISO 27001, OWASP, Zero Trust |
