@@ -9,6 +9,8 @@ permalink: /
 
 A personal reference of software engineering methodologies, frameworks, and operational practices. Each file is self-contained and includes Mermaid diagrams.
 
+The page is available in: https://italosalgado14.github.io/methodology-cheatsheets/
+
 ## Contents
 
 | File | Topic | Context |

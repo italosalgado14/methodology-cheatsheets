@@ -1,0 +1,61 @@
+// Extra styling on top of the custom color scheme.
+// Loaded by just-the-docs after all core styles.
+
+// -------- Tables --------
+.main-content {
+  table {
+    border: 1px solid #c7d2fe;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  table th {
+    background-color: #4f46e5;  // indigo-600
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 2px solid #3730a3;
+  }
+
+  table tr:nth-child(even) td {
+    background-color: #f5f7ff;  // very light indigo stripe
+  }
+
+  table tr:hover td {
+    background-color: #eef2ff;  // sidebar tint on hover
+  }
+
+  table td {
+    border-color: #e0e7ff;
+  }
+}
+
+// -------- Sidebar --------
+.side-bar {
+  border-right: 1px solid #c7d2fe;
+}
+
+// Accent on the active nav item
+.nav-list .nav-list-item .nav-list-link.active {
+  background-color: #c7d2fe;   // indigo-200
+  color: #1e3a8a;              // indigo-900
+  font-weight: 600;
+  border-left: 3px solid #4f46e5;
+}
+
+// Hover state on nav items
+.nav-list .nav-list-item .nav-list-link:hover {
+  background-color: #e0e7ff;   // indigo-100
+  color: #3730a3;              // indigo-800
+}
+
+// Site title in header
+.site-title {
+  color: #1e3a8a !important;
+  font-weight: 700;
+}
+
+// Search box
+.search-input {
+  background-color: #f5f7ff;
+  border: 1px solid #c7d2fe;
+}
