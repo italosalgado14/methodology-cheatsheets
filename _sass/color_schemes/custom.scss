@@ -1,0 +1,21 @@
+// Custom color scheme — inherits from just-the-docs "light" and tints
+// the sidebar, links, headings, and accent elements.
+
+$sidebar-color: #eef2ff;           // soft indigo tint for sidebar background
+$body-background-color: #ffffff;
+$body-heading-color: #1e3a8a;       // deep indigo for headings
+$body-text-color: #1f2937;
+$link-color: #4f46e5;               // indigo-600
+$btn-primary-color: #4f46e5;
+$base-button-color: #eef2ff;
+$nav-child-link-color: #3730a3;
+$search-background-color: #f5f7ff;
+$table-background-color: #ffffff;
+$feedback-color: #e0e7ff;
+$code-background-color: #f5f7ff;
+
+// Callout / note block accents
+$blue-000: #eef2ff;
+$blue-100: #c7d2fe;
+$blue-200: #a5b4fc;
+$blue-300: #818cf8;

@@ -19,7 +19,7 @@ aux_links:
     - "https://github.com/italosalgado14/methodology-cheatsheets"
 
 # Color scheme toggle (light/dark)
-color_scheme: light
+color_scheme: custom
 
 # Exclude Jekyll build artifacts from site
 exclude:
