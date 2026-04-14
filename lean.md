@@ -1,3 +1,8 @@
+---
+title: Lean
+nav_order: 9
+---
+
 # Lean — Eliminating Waste, Maximizing Value
 
 **Lean** originated at Toyota in the 1950s as the **Toyota Production System (TPS)**. It was later codified as "Lean Manufacturing" and adapted to software by Mary and Tom Poppendieck as **Lean Software Development** (2003).

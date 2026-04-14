@@ -1,3 +1,8 @@
+---
+title: SAFe
+nav_order: 8
+---
+
 # SAFe — Scaled Agile Framework
 
 **SAFe (Scaled Agile Framework)** is the most widely adopted framework for applying Agile at enterprise scale — coordinating dozens or hundreds of Agile teams working on the same product or portfolio. Created by Dean Leffingwell, current version is **SAFe 6.0**.

@@ -1,3 +1,8 @@
+---
+title: SRE
+nav_order: 5
+---
+
 # SRE — Site Reliability Engineering
 
 **Site Reliability Engineering** is Google's engineering approach to operations: "what happens when you ask a software engineer to design an operations team." Codified in the *Google SRE Book* (2016), it treats operations as a software problem.

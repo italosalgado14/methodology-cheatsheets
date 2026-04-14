@@ -1,3 +1,8 @@
+---
+title: List of Methodologies
+nav_order: 2
+---
+
 # List of Methodologies by Industry
 
 A reference catalog of methodologies, frameworks, and standards you will encounter across industries. Use this as a map to know what exists and where it applies.

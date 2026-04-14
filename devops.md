@@ -1,3 +1,8 @@
+---
+title: DevOps
+nav_order: 4
+---
+
 # DevOps — Unifying Development and Operations
 
 **DevOps** is a cultural and technical movement that unifies software development (Dev) and IT operations (Ops) to deliver software faster, more reliably, and with shorter feedback loops. It emerged around 2009 from the Agile and Lean movements.

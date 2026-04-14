@@ -1,3 +1,8 @@
+---
+title: V-Model
+nav_order: 7
+---
+
 # V-Model — Verification & Validation for Safety-Critical Systems
 
 The **V-Model** is a development methodology where each design phase has a corresponding test phase, forming a "V" shape. It is the dominant model in **safety-critical embedded systems**: automotive (ISO 26262), medical devices (IEC 62304), aerospace (DO-178C), railway (EN 50128), and industrial (IEC 61508).

@@ -1,0 +1,29 @@
+title: Engineering Notes — Methodologies
+description: A personal reference of software engineering methodologies, frameworks, and operational practices.
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+# Enable built-in search
+search_enabled: true
+
+# Mermaid diagram support (just-the-docs native)
+mermaid:
+  version: "10.9.0"
+
+# Aux links (top-right of the page)
+aux_links:
+  "View on GitHub":
+    - "https://github.com/italosalgado14/methodology-cheatsheets"
+
+# Color scheme toggle (light/dark)
+color_scheme: light
+
+# Exclude Jekyll build artifacts from site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .gitignore

@@ -1,3 +1,8 @@
+---
+title: Agile
+nav_order: 3
+---
+
 # Agile — Iterative Software Delivery
 
 **Agile** is a philosophy for software development based on the **Agile Manifesto (2001)**, which prioritizes:

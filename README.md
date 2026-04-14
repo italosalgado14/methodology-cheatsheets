@@ -1,3 +1,10 @@
+---
+title: Home
+layout: home
+nav_order: 1
+permalink: /
+---
+
 # Engineering Notes — Methodologies
 
 A personal reference of software engineering methodologies, frameworks, and operational practices. Each file is self-contained and includes Mermaid diagrams.
