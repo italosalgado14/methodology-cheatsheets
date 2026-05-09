@@ -22,6 +22,7 @@ The page is available in: https://italosalgado14.github.io/methodology-cheatshee
 | [`v-model.md`](./v-model.md) | V-Model | Safety-critical embedded (automotive, medical, aerospace) |
 | [`safe.md`](./safe.md) | SAFe | Agile at enterprise scale |
 | [`lean.md`](./lean.md) | Lean / Kaizen / VSM | Foundation behind Agile, Kanban, DevOps |
+| [`sdd.md`](./sdd.md) | Spec-Driven Development | LLM/agent-era spec-first delivery |
 | [`List-Methodologies.md`](./List-Methodologies.md) | Catalog of all methodologies | Reference index by industry |
 
 ## How they relate
@@ -39,6 +40,8 @@ flowchart TB
     ITIL[ITIL<br/>1980s] -.complements.-> DevOps
     ITIL -.complements.-> Agile
     Waterfall[Waterfall] --> VModel[V-Model<br/>Safety-critical]
+    Agile --> SDD[Spec-Driven Development<br/>2024+ LLM agents]
+    DevOps --> SDD
 ```
 
 ## How to view diagrams
